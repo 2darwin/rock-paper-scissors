@@ -7,19 +7,14 @@
 </head>
 <body>
     <script>
+        //Grabs the computers choice by random
         function getComputerChoice(){
             
             let pick = ["rock", "paper", "scissors"];
             return pick[Math.floor(Math.random() * pick.length)];
         }
-
-        //function playerChoice(){
-
-            //let choice = prompt ("Rock, Paper or, Scissors?").toLowerCase
-
-            //return choice
-       //}
-
+        
+        //Plays a round and returns the result
         function playRound(playerSelection, computerSelection){
 
             if (playerSelection == "rock" && computerSelection == "rock"){
@@ -53,7 +48,8 @@
                 return "Invalid input"
             }
         }
-
+        
+        //Runs a 5 games
         function game(){
             for (let i = 0; i < 5; i++){
 
